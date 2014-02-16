@@ -1,3 +1,10 @@
+"""
+Plays the 'pick a 4 letter word starting with the last letter of my word'
+game with you.
+
+Just run the program.
+"""
+
 class Game(object):
     def __init__(self, word_length=4):
         self.word_length = word_length
@@ -56,6 +63,7 @@ class Game(object):
                 print "My word: %s." % word
                 return
         print "I can't find a word starting with '%s'.  You win!" % letter
+
 
 def main():
     game = Game(4)
